@@ -1,13 +1,16 @@
 import Text from './components/Text'
 import './App.css'
 import Button from './components/Button'
+import GloabalState from './context'
 
 function App() {
 
   return (
     <>
-      <Text/>
-      <Button/>
+      <GloabalState>
+        <Text />
+        <Button />
+      </GloabalState>
     </>
   )
 }

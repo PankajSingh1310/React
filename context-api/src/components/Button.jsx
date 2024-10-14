@@ -6,8 +6,9 @@ const Button = () => {
     const {theme, setTheme} = useContext(GlobalContext);
 
     const toggleTheme = () => {
-        if(theme === "dark") setTheme("light");
-        else setTheme("dark");
+        theme === "dark" ? 
+        setTheme("light") :
+        setTheme("dark");
     }
 
   return (
